@@ -14,7 +14,7 @@ SQLCipher is a standalone fork of the [SQLite](https://www.sqlite.org/) database
 **Xcode**
 
 1. In Xcode go to File > Add Packages...
-2. Enter the repository URL: `https://github.com/sqlcipher/sqlcipher-spm`
+2. Enter the repository URL: `https://github.com/sqlcipher/SQLCipher.swift`
 3. Choose your desired version or branch.
 
 **Package Dependency**
