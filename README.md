@@ -44,7 +44,7 @@ To enable SQLCipher encryption in your consuming project, you must set the `SQLI
 
 For Swift based projects, go to your project's Build Settings and search for Preprocessor Macros, enter `SQLITE_HAS_CODEC=1` for both Debug and Release Preprocessor Macros.
 
-For Objective-C based projects, go to your project's Build Settings and search for Other C Flags, enter `-DSQITE_HAS_CODEC` for both Debug and Release Other C Flags.
+For Objective-C based projects, go to your project's Build Settings and search for Other C Flags, enter `-DSQLITE_HAS_CODEC` for both Debug and Release Other C Flags.
 
 ## License
 
