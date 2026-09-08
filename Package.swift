@@ -20,8 +20,8 @@ let package = Package(
     ],
     targets: [
         .binaryTarget(name: "SQLCipher",
-                      url: "https://github.com/sqlcipher/SQLCipher.swift/releases/download/4.18.0/SQLCipher.xcframework.zip",
-                      checksum: "904823c0e8ccd8e9c21a871238470e9ac57c7c20ff17341171008c32230154cb"
+                      url: "https://github.com/sqlcipher/SQLCipher.swift/releases/download/4.19.0/SQLCipher.xcframework.zip",
+                      checksum: "39f02d2f04f0de2ba1facf215550bfc6e6e2c9971d5d8ebb0cdd604874781bd7"
                      ),
         .testTarget(
             name: "SQLCipherTests",
