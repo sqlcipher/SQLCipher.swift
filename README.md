@@ -8,7 +8,7 @@ Summary:
 - Changes architecture to use VFS shims
 - Uses AEAD Encryption with AES-256-GCM
 - Increases KDF iteration increase to 512K
-- Increase default page size to 8129 bytes
+- Increase default page size to 8192 bytes
 - Adds encryption and decryption support to PRAGMA rekey
 - **BREAKING CHANGES** - see CHANGELOG.md and release announcement
 
