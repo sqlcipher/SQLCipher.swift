@@ -1,5 +1,17 @@
 # SQLCipher.swift
 
+⚠️ **WARNING**: This should only be used for beta testing at this time, not in production. It includes major functional, API, and behavioral changes that are **NOT COMPATIBLE** with SQLCipher 4 and earlier by default.
+
+SQLCipher 5.0.0-beta details: https://www.zetetic.net/blog/2026/09/15/sqlcipher-5.0.0-beta/
+
+Summary:
+- Changes architecture to use VFS shims
+- Uses AEAD Encryption with AES-256-GCM
+- Increases KDF iteration increase to 512K
+- Increase default page size to 8129 bytes
+- Adds encryption and decryption support to PRAGMA rekey
+- **BREAKING CHANGES** - see CHANGELOG.md and release announcement
+
 SQLCipher.swift is based on [SQLCipher Core](https://github.com/sqlcipher/sqlcipher) and is the official Swift Package for SQLCipher maintained by [Zetetic, LLC](https://www.zetetic.net).
 
 SQLCipher is a standalone fork of the [SQLite](https://www.sqlite.org/) database library that adds 256 bit AES encryption of database files and other security features like:
