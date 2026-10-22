@@ -2,15 +2,26 @@
 
 ⚠️ **WARNING**: This should only be used for beta testing at this time, not in production. It includes major functional, API, and behavioral changes that are **NOT COMPATIBLE** with SQLCipher 4 and earlier by default.
 
-SQLCipher 5.0.0-beta details: https://www.zetetic.net/blog/2026/09/15/sqlcipher-5.0.0-beta/
 
-Summary:
-- Changes architecture to use VFS shims
+SQLCipher 5.0.0-beta.1 details: https://www.zetetic.net/blog/2026/10/22/sqlcipher-5.0.0-beta.1/
+
+Changes between 5.0.0-beta to 5.0.0-beta.1:
+
+- Changes architecture to use codec
+- Adjusts KDF iteration back to 256K
+- Rekey support for databases in WAL mode with concurrent connections
+- Journal spill behavior is now locked down to prevent plaintext writes
+- Fixed a bug where `cipher_hmac_fast_kdf` could write the page HMAC past the reserved area
+- Improved error handling and reporting for rekey failures
+- Fixed shared cache connections for encrypted databases
+- Added `PRAGMA cipher_selftest` for verifying internal implementations
+
+Summary of major version 5 changes:
+
 - Uses AEAD Encryption with AES-256-GCM
-- Increases KDF iteration increase to 512K
 - Increase default page size to 8192 bytes
 - Adds encryption and decryption support to PRAGMA rekey
-- **BREAKING CHANGES** - see CHANGELOG.md and release announcement
+- **BREAKING CHANGES** - see [CHANGELOG.md](https://www.zetetic.net/blog/2026/10/22/sqlcipher-5.0.0-beta.1/) and [release announcement](https://www.zetetic.net/blog/2026/10/22/sqlcipher-5.0.0-beta.1/)
 
 SQLCipher.swift is based on [SQLCipher Core](https://github.com/sqlcipher/sqlcipher) and is the official Swift Package for SQLCipher maintained by [Zetetic, LLC](https://www.zetetic.net).
 
